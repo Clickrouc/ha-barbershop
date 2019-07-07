@@ -1,9 +1,6 @@
 .DS_Store
-.idea
-*.ai
-*.log
-*.pdf
-*.psd
-*.sublime*
-node_modules/
-Thumbs.db
+/node_modules
+/design
+gulpfile.js
+package-lock.json
+package.json
