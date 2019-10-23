@@ -1,6 +1,3 @@
 .DS_Store
 /node_modules
 /design
-gulpfile.js
-package-lock.json
-package.json
