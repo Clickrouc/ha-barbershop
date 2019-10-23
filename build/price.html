@@ -61,15 +61,39 @@
         <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
         <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
       </section>
+
       <section class="modal modal-login">
         <h2>Личный кабинет</h2>
         <p>Введите пожалуйста свой логин и&nbsp;пароль</p>
-        <!-- Здесь будет форма -->
-        <span class="modal-close">x</span>
+        <form class="login-form" action="https://echo.htmlacademy.ru">
+          <p>
+            <label class="visually-hidden" for="user-login"></label>
+            <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+          </p>
+          <p>
+            <label class="visually-hidden" for="user-password"></label>
+            <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+          </p>
+          <p class="login-password-input">
+            <label class="login-checkbox">
+              <input type="checkbox" name="remember" class="visually-hidden">
+              <span class="checkbox-indicator"></span>
+              Запомнить меня
+            </label>
+            <a class="restore" href="#">Я забыл пароль!</a>
+          </p>
+          <button class="button" type="submit">Войти</button>
+        </form>
+        <button class="modal-close">Закрыть</button>
       </section>
+
       <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <span class="modal-close">x</span>
+          <picture>
+            <source srcset="img/map.webp" type="image/webp">
+            <img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+          </picture>
+        <button class="modal-close">Закрыть</button>
       </section>
     </main>
     <footer class="main-footer">
@@ -82,9 +106,9 @@
       <div class="footer-social">
         <b>Давайте дружить!</b>
         <ul>
-          <li><a class="social-button href="#"">VK</a></li>
-          <li><a class="social-button href="#"">Facebook</a></li>
-          <li><a class="social-button href="#"">Instagram</a></li>
+          <li><a class="social-button" href="#">VK</a></li>
+          <li><a class="social-button" href="#">Facebook</a></li>
+          <li><a class="social-button" href="#">Instagram</a></li>
         </ul>
       </div>
       <p class="footer-copyright">
